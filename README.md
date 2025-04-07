@@ -67,9 +67,18 @@ All tests validate:
 ### Install dependencies
 
 ```bash
+git clone https://github.com/MaxVolobuev/automation-poetry-api
+cd automation-poetry-api
+
+# Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate
+
+# Install required dependencies
 pip install -r requirements.txt
+
+# Create a .env file in the project root:
+echo "ENV=prod" > .env
 ```
 
 ### One-line test run (recommended)
